@@ -14,7 +14,7 @@ import SelecionarIngredientes from './SelecionarIngredientes.vue';
 <template>
     <main class="conteudo-principal">
         <section>
-            <span class="subtitulo-lg sua-lista-texto">Sua lista:</span>
+            <span class="subtitulo-lg sua-lista-texto">Sua listas:</span>
 
             <ul v-if="ingredientes.length" class="ingredientes-sua-lista">
                 <li v-for="ingrediente in ingredientes" :key="ingrediente" class="ingrediente">{{ ingrediente }}</li>
