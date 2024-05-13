@@ -1,38 +1,32 @@
 <script lang="ts">
 import SelecionarIngredientes from './SelecionarIngredientes.vue';
 
-    export default {
-        data (){
-            return {
-                ingredientes: ['Alho', 'Manteiga', 'Orégano', 'aaa']
-            }
-        },
-        components: {SelecionarIngredientes}
-    }
-</script>
 
+export default {
+    data(){
+      return {
+        ingredientes: []
+      };
+    },
+    components: { SelecionarIngredientes }
+}
+</script>
 <template>
     <main class="conteudo-principal">
         <section>
-            <span class="subtitulo-lg sua-lista-texto">Sua listas:</span>
-
-            <ul v-if="ingredientes.length" class="ingredientes-sua-lista">
-                <li v-for="ingrediente in ingredientes" :key="ingrediente" class="ingrediente">{{ ingrediente }}</li>
-            </ul>
-
-            <p v-else class="paragrafo lista-vazia">
-                <img src="../assets/imagens/icones/lista-vazia.svg" alt="Icone de pesquisa">
-                Sua lista está vazia, selecione ingredientes para iniciar.
-            </p>
-
+            <span class="subtitulo-lg sua-lista-texto">Sua Lista:</span>
         </section>
+        <ul v-if="ingredientes.length" class="ingredientes-sua-lista">
+             <li v-for="ingrediente in ingredientes" :key="ingrediente" class="ingrediente">  {{ ingrediente }} </li> <!-- Usando a diretiva v-for e o idenditificador de cada item -->
+        </ul>
 
+        <p v-else class="paragrafo lista-vazia"><img src="../assets/imagens/icones/lista-vazia.svg" alt="">Sua lista está vazia, selecione ingredientes para iniciar.</p>
         <SelecionarIngredientes />
     </main>
 </template>
 
 <style scoped>
-    .conteudo-principal {
+.conteudo-principal {
   padding: 6.5rem 7.5rem;
   border-radius: 3.75rem 3.75rem 0rem 0rem;
   background: var(--creme, #FFFAF3);
