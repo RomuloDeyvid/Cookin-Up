@@ -11,7 +11,7 @@ export default {
   
   <Banner />
   <ConteudoPrincipal />
-  <>
+  
  
 </template>
 
