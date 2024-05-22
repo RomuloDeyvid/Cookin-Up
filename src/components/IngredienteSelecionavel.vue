@@ -1,5 +1,6 @@
 <script lang="ts">
-import Tag from './Tag.vue'
+import Tag from './Tag.vue';
+
 
 export default {
     components: { Tag },
@@ -8,13 +9,23 @@ export default {
         return {
             selecionado: false
         }
-    }
+    },
+    methods: {
+        aoClicar(){
+            this.selecionado = !this.selecionado
+
+            if(this.selecionado){
+                this.$emit('adicionarIngrediente', this.ingrediente)
+            }
+        }
+    }, 
+    emits: ['adicionarIngrediente']
 }
 </script>
 
 <template>
-    <button>
-        <Tag class="ingrediente" :texto="ingrediente" :ativa="selecionado" @click="selecionado = !selecionado" :aria-pressed="selecionado"/>
+    <button class="ingrediente" @click="aoClicar()" :aria-pressed="selecionado">
+        <Tag :texto="ingrediente" :ativa="selecionado" />
     </button>
     
     
