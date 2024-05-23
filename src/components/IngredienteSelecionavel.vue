@@ -18,7 +18,8 @@ export default {
                 this.$emit('adicionarIngrediente', this.ingrediente)
             }
             else{
-                this.$emit('removerIngrediente', this.ingrediente)
+                this.$emit('removerIngrediente', this.ingrediente) 
+                // Adicionando a função de remover os ingredientes da lista
             }
         }
     }, 
