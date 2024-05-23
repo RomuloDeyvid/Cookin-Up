@@ -13,6 +13,9 @@ export default {
   methods: {
     adicionarIngredientes(ingrediente: string){
       this.ingredientes.push(ingrediente)
+    },
+    removerIngredientes(ingrediente: string){
+      this.ingredientes = this.ingredientes.filter(iLista => ingrediente !== iLista)
     }
   }
 }
@@ -21,7 +24,7 @@ export default {
   <main class="conteudo-principal">
     <SuaLista :ingredientes="ingredientes"/>
 
-    <SelecionarIngredientes @adicionar-ingrediente="adicionarIngredientes"/>
+    <SelecionarIngredientes @adicionar-ingrediente="adicionarIngredientes" @remover-ingrediente="removerIngredientes"/>
   </main>
 </template>
 
