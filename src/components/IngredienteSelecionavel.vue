@@ -24,6 +24,7 @@ export default {
         }
     }, 
     emits: ['adicionarIngrediente', 'removerIngrediente']
+    //Essa é uma boa prática quando se faz emissão de evento
 }
 </script>
 
