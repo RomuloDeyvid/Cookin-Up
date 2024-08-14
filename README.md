@@ -3,16 +3,16 @@
 
 ## Configuração adequada pra rodar na IDE
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar).
 
 
-## Configurando o projeto
+## Configurando o projeto, primeiramente baixe as dependencias necessárias com o comando:
 
 ```sh
 npm install
 ```
 
-### Compilando e atualizando pra desenvolver
+### Para compilar o projeto em um servidor local utilize o comando:
 
 ```sh
 npm run dev
