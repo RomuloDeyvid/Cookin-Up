@@ -17,3 +17,4 @@ npm install
 ```sh
 npm run dev
 ```
+Prévia do projeto:
