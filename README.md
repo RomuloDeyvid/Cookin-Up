@@ -1,5 +1,8 @@
 # Cookin-Up
 
+## Dê uma olhada no projeto:
+https://cookin-up-mp76.vercel.app/
+## Prévia
 
 ## Configuração adequada pra rodar na IDE
 
@@ -17,4 +20,4 @@ npm install
 ```sh
 npm run dev
 ```
-Prévia do projeto:
+
