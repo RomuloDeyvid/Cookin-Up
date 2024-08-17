@@ -1,6 +1,6 @@
 <template>
     <footer class="rodape paragrafo">
-      Desenvolvido por Alura | 2023 - Projeto fictício sem fins comerciais.
+      Desenvolvido por Rômulo Deyvid | 2023 - Projeto fictício sem fins comerciais.
     </footer>
   </template>
   
