@@ -1,5 +1,5 @@
 # Cookin-Up
-
+Projeto desenvolvido para trazer ideias de receitas apartir dos ingredientes que você já tem em casa.
 ## Dê uma olhada no projeto:
 https://cookin-up-mp76.vercel.app/
 ## Prévia
