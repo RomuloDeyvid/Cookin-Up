@@ -111,6 +111,3 @@ export default {
 }
 </style>
 
-  function itensDeLista1EstaoEmLista2(ingredientes: string[], ingredientes1: any) {
-    throw new Error('Function not implemented.');
-  }
